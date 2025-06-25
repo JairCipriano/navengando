@@ -1,0 +1,231 @@
+/* CSS para estilizar o cabeçalho */
+
+        /* Reset básico e fonte padrão */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8dbc4; /* Cor de fundo para a página */
+        }
+        
+        /* Estilo do container principal do cabeçalho */
+        .site-header {
+            background-color: #e8dbc4; /* Azul escuro/ardósia */
+            color: #ecf0f1; /* Cor do texto principal (branco suave) */
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky; /* Faz o cabeçalho ficar fixo no topo */
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Container para alinhar o conteúdo */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* Alinha itens nas extremidades */
+            align-items: center; /* Alinha verticalmente ao centro */
+        }
+
+        /* Estilo do Logo */
+        .logo a {
+            text-decoration: none;
+            color: #9c9995;
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        /* Estilo da Navegação Principal */
+        .main-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none; /* Remove marcadores da lista */
+            display: flex; /* Coloca os itens em linha */
+        }
+
+        .main-nav li {
+            margin-left: 25px; /* Espaçamento entre os links */
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #9c9995;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .main-nav a:hover, .main-nav a.active {
+            font-size: large;
+            color: #9c9995;
+            transition: font-size 0.4s ease;
+        }
+
+       /* Container principal da barra de busca */
+.search-bar {
+    position: relative; /* Essencial para posicionar o botão dentro dele */
+    width: 100%; /* Ou um tamanho fixo, ex: 350px */
+}
+
+/* Estilo do campo de busca */
+.search-bar input[type="search"] {
+    width: 100%; /* Faz o input ocupar todo o espaço do container */
+    padding: 8px 40px 8px 15px; /* Aumenta o padding direito para dar espaço para a lupa */
+    border: 1px solid #756e61;
+    border-radius: 20px;
+    background-color: #e8dbc4;
+    outline: none;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
+
+/* Estilo do botão de busca */
+.search-bar button {
+    position: absolute; /* Posiciona o botão em relação ao .search-bar */
+    top: 50%;
+    right: 10px; /* Distância da borda direita */
+    transform: translateY(-50%); /* Centraliza o botão verticalmente */
+    
+    border: none;
+    background-color: transparent; /* Remove o fundo do botão */
+    padding: 0; /* Remove o padding padrão do botão */
+    cursor: pointer;
+}
+/* Container principal da barra de busca */
+.search-bar {
+    position: relative;
+    width: 350px; /* IMPORTANTE: Uma largura definida é necessária para este método */
+    margin-left: auto; /* A mágica acontece aqui */
+    margin-right: 0; /* Garante que não haja margem à direita */
+}
+
+/* O resto do seu CSS para .search-bar input, button, etc., continua o mesmo */
+
+/* Estilo da imagem da lupa */
+#lupa {
+    width: 20px;
+    height: 20px;
+    display: block; /* Evita espaços extras indesejados */
+}
+
+main img,
+section.banner-secundario img,
+footer img {
+    width: 100%;
+    height: auto;
+}
+
+/* --------------------------------------------------
+   Layout principal dos livros + botões Download
+   -------------------------------------------------- */
+/*--------------------------------------------------
+  Container geral dos livros (5 por linha no desktop)
+--------------------------------------------------*/
+/* 1) Container flex: gap mínimo e centralizado */
+.livros {
+  display: flex;
+  justify-content: center;  /* centraliza todo o conjunto */
+  flex-wrap: wrap;
+  gap: 14rem;              /* praticamente colados */
+  padding: 1rem;
+}
+
+/* 2) Livros sem largura fixa – encolhem ao tamanho da imagem */
+.livro-item {
+  position: relative;
+  flex: 0 0 auto;          /* respeita apenas o tamanho do conteúdo */
+  margin-right: 0;          /* sem margem extra */
+}
+
+/* 3) Controlando o tamanho da imagem para uniformizar */
+.livro-item img {
+  display: block;
+  width: 120px;             /* ajuste esse valor ao tamanho desejado */
+  height: auto;
+}
+
+/* 4) Botão sempre centralizado embaixo da imagem */
+.botao-download {
+  position: absolute;
+  bottom: 50px;
+  left: 0.5%;
+  transform: translateX(-50%);
+  width: 110px;              /* ajuste à largura da imagem se quiser */
+  height: 20px;
+  text-align: center;
+  
+  color: transparent;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 6px 0;           /* menores para caber na largura */
+  border-radius: 0 0 5px 5px;
+}
+
+
+
+
+/*--------------------------------------------------
+  Empilha em coluna no mobile
+--------------------------------------------------*/
+@media (max-width: 768px) {
+
+
+        /* Container para alinhar o conteúdo */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* Alinha itens nas extremidades */
+            align-items: center; /* Alinha verticalmente ao centro */
+        }
+
+
+
+        .main-nav li {
+            margin-left: 5px; /* Espaçamento entre os links */
+
+        }
+.livros {
+  display: flex;
+  justify-content: center;  /* centraliza todo o conjunto */
+  flex-wrap: wrap;
+  gap: 6em;              /* praticamente colados */
+  padding: 1rem;
+}
+
+/* 2) Livros sem largura fixa – encolhem ao tamanho da imagem */
+.livro-item {
+  position: relative;
+  flex: 0 0 auto;          /* respeita apenas o tamanho do conteúdo */
+  margin-right: 0;          /* sem margem extra */
+}
+
+/* 3) Controlando o tamanho da imagem para uniformizar */
+.livro-item img {
+  display: block;
+  width: 120px;             /* ajuste esse valor ao tamanho desejado */
+  height: auto;
+}
+
+/* 4) Botão sempre centralizado embaixo da imagem */
+.botao-download {
+  position: absolute;
+  bottom: 30px;
+  left: 0.5%;
+  transform: translateX(-50%);
+  width: 60px;              /* ajuste à largura da imagem se quiser */
+  height: 8px;
+  text-align: center;
+  
+  color: transparent;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 6px 0;           /* menores para caber na largura */
+  border-radius: 0 0 5px 5px;
+}
+}
