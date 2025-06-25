@@ -173,9 +173,35 @@ footer img {
 --------------------------------------------------*/
 @media (max-width: 768px) {
 
+ .logo a {
+            text-decoration: none;
+            color: #9c9995;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+   .main-nav a {
+            text-decoration: none;
+            color: #9c9995;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 13px;
+        }
+
+        .main-nav a:hover, .main-nav a.active {
+            font-size: large;
+            color: #9c9995;
+            transition: font-size 0.4s ease;
+        }
 
         /* Container para alinhar o conteúdo */
         .container {
+            height: 35px;
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
@@ -183,7 +209,21 @@ footer img {
             justify-content: space-between; /* Alinha itens nas extremidades */
             align-items: center; /* Alinha verticalmente ao centro */
         }
+     #lupa {
+    width: 15px;
+    height: 15px;
+    display: block; /* Evita espaços extras indesejados */
+}
 
+.search-bar input[type="search"] {
+    width: 100%; /* Faz o input ocupar todo o espaço do container */
+    padding: 4px 20px 8px 15px; /* Aumenta o padding direito para dar espaço para a lupa */
+    border: 1px solid #756e61;
+    border-radius: 20px;
+    background-color: #e8dbc4;
+    outline: none;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
 
 
         .main-nav li {
@@ -228,4 +268,20 @@ footer img {
   padding: 6px 0;           /* menores para caber na largura */
   border-radius: 0 0 5px 5px;
 }
+
+main > img{
+  width: 100%;
+  height: 20em;
+}
+
+#segundo{
+   width: 100%;
+  height: 6em;
+}
+
+#terceiro{
+   width: 100%;
+  height: 25em;
+}
+
 }
