@@ -157,7 +157,7 @@ footer img {
   width: 110px;              /* ajuste à largura da imagem se quiser */
   height: 20px;
   text-align: center;
-  
+  background-color: #e8dbc4;
   color: transparent;
   font-size: 0.85rem;
   font-weight: bold;
@@ -255,7 +255,7 @@ footer img {
 /* 4) Botão sempre centralizado embaixo da imagem */
 .botao-download {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 0.5%;
   transform: translateX(-50%);
   width: 60px;              /* ajuste à largura da imagem se quiser */
