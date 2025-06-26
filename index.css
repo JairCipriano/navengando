@@ -157,7 +157,7 @@ footer img {
   width: 110px;              /* ajuste à largura da imagem se quiser */
   height: 20px;
   text-align: center;
-  background-color: #e8dbc4;
+  
   color: transparent;
   font-size: 0.85rem;
   font-weight: bold;
@@ -234,7 +234,7 @@ footer img {
   display: flex;
   justify-content: center;  /* centraliza todo o conjunto */
   flex-wrap: wrap;
-  gap: 6em;              /* praticamente colados */
+  gap: 5em;              /* praticamente colados */
   padding: 1rem;
 }
 
