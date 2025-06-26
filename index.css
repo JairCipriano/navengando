@@ -225,6 +225,12 @@ footer img {
             margin-left: 5px; /* Espaçamento entre os links */
 
         }
+ 
+        footer >img{
+      
+        }
+        
+
 .livros {
   display: flex;
   justify-content: center;  /* centraliza todo o conjunto */
@@ -276,7 +282,7 @@ main > img{
 
 #terceiro{
    width: 100%;
-  height: 25em;
+  height: 20em;
 }
 
 }
