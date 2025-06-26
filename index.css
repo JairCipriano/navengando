@@ -43,6 +43,7 @@
         /* Estilo da Navegação Principal */
         .main-nav ul {
             margin: 0;
+            margin-left: 90px;
             padding: 0;
             list-style: none; /* Remove marcadores da lista */
             display: flex; /* Coloca os itens em linha */
@@ -220,7 +221,13 @@ footer img {
     box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
 }
 
-
+.main-nav ul {
+            margin: 0;
+            margin-left: 0px;
+            padding: 0;
+            list-style: none; /* Remove marcadores da lista */
+            display: flex; /* Coloca os itens em linha */
+        }
         .main-nav li {
             margin-left: 5px; /* Espaçamento entre os links */
 
